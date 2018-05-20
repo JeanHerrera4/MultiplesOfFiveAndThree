@@ -16,16 +16,17 @@ public class DetermineFizzBuzz {
 	 */
 	
 	public String verifyFizzBuzz(int number){
-		if (isMultipleOf(number, 15)){
+		
+		if (isMultipleOf(number, 15))
 			return "FizzBuzz";
-		}else
-		if (isMultipleOf(number, 5)){
+		
+		if (isMultipleOf(number, 5))
 			return "Buzz";
-		}else
-		if (isMultipleOf(number, 3)){
+		
+		if (isMultipleOf(number, 3))
 			return "Fizz";
-		}else
-			return Integer.toString(number);
+			
+		return Integer.toString(number);
 	}
 	
 	/**
